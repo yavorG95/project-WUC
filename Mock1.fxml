@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="-2.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="156.0" prefWidth="696.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="74.0" prefWidth="651.0">
+               <children>
+                  <Label layoutX="532.0" layoutY="14.0" prefHeight="25.0" prefWidth="110.0" text="Logged in as Admin " />
+                  <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="642.0" layoutY="30.0">
+                     <image>
+                        <Image url="@../../../2000px-Human-gnome-session-logout.svg.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="587.0" layoutY="34.0" prefHeight="25.0" prefWidth="51.0" text="Log Out" />
+                  <ImageView fitHeight="74.0" fitWidth="528.0">
+                     <image>
+                        <Image url="@../../../banner.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="694.0">
+               <children>
+                  <MenuBar layoutY="-1.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="696.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Student">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Staff">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Course">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Module">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Assignment">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Attendance">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Tutor">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Timetable">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Diary">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Report Generation">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                    </menus>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="2.0" />
+                     </padding>
+                  </MenuBar>
+                  <Label layoutX="250.0" layoutY="37.0" text="Student Records">
+                     <font>
+                        <Font name="Candara" size="31.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.49444444444444446" centerY="0.49523809523809526" focusDistance="-0.09302325581395343" radius="0.9767441860465116">
+                           <stops>
+                              <Stop color="#22d398" />
+                              <Stop color="#226b72" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <TextField layoutX="328.0" layoutY="211.0" />
+      <TextField layoutX="328.0" layoutY="246.0" />
+      <TextField layoutX="328.0" layoutY="284.0" />
+      <TextArea layoutX="539.0" layoutY="190.0" prefHeight="99.0" prefWidth="123.0" text="&#10;&#10;     Student Photo&#10;                  " />
+      <Label layoutX="253.0" layoutY="211.0" prefHeight="25.0" prefWidth="65.0" text="Firstname:">
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+               <stops>
+                  <Stop color="#0ebf75" />
+                  <Stop color="#80e0ed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="258.0" layoutY="246.0" prefHeight="25.0" prefWidth="56.0" text="Surname:">
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+               <stops>
+                  <Stop color="#0ebf75" />
+                  <Stop color="#80e0ed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="228.0" layoutY="284.0" prefHeight="25.0" prefWidth="91.0" text="Mobile number:">
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+               <stops>
+                  <Stop color="#0ebf75" />
+                  <Stop color="#80e0ed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+    <Button layoutX="426.0" layoutY="370.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" text="Add">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.4047619047619048" startX="0.8523809523809524" startY="0.4">
+               <stops>
+                  <Stop color="#948d8d" />
+                  <Stop color="#948d8d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Label layoutX="286.0" layoutY="323.0" prefHeight="25.0" prefWidth="38.0" text="DoB:">
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+               <stops>
+                  <Stop color="#0ebf75" />
+                  <Stop color="#80e0ed" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <DatePicker layoutX="327.0" layoutY="323.0" prefHeight="25.0" prefWidth="164.0" />
+      <Button layoutX="539.0" layoutY="297.0" mnemonicParsing="false" text="Upload " />
+      <Button layoutX="611.0" layoutY="297.0" mnemonicParsing="false" text="Delete" />
+      <Label layoutX="127.0" layoutY="173.0" prefHeight="32.0" prefWidth="186.0" text="Add New Student">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.4095238095238095" endY="0.8285714285714286" startX="0.4095238095238095" startY="0.4">
+               <stops>
+                  <Stop color="#13c37f" />
+                  <Stop color="#948d8d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

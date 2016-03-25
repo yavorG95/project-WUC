@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <SplitPane layoutX="-2.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="156.0" prefWidth="696.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="74.0" prefWidth="651.0">
+               <children>
+                  <ImageView fitHeight="154.0" fitWidth="696.0">
+                     <image>
+                        <Image url="@../../../banner.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <TextField fx:id="txtUsername" layoutX="289.0" layoutY="233.0" />
+      <Button layoutX="386.0" layoutY="337.0" mnemonicParsing="false" onAction="#Login" text="Log-in" />
+      <Label layoutX="217.0" layoutY="233.0" text="Username:" />
+      <Label layoutX="218.0" layoutY="280.0" text="Password:" />
+      <PasswordField fx:id="txtPassword" layoutX="289.0" layoutY="279.0" />
+      <Label fx:id="isConnected" layoutX="303.0" layoutY="381.0" prefHeight="53.0" prefWidth="254.0" text="Status" />
+   </children>
+</AnchorPane>
