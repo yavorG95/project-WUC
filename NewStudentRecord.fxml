@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="-2.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="156.0" prefWidth="696.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="74.0" prefWidth="651.0">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="642.0" layoutY="30.0">
+                     <image>
+                        <Image url="@images/2000px-Human-gnome-session-logout.svg.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="74.0" fitWidth="528.0">
+                     <image>
+                        <Image url="@images/banner.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="559.0" layoutY="14.0" prefHeight="17.0" prefWidth="95.0" text="Lab" />
+                  <Button fx:id="logout" layoutX="581.0" layoutY="34.0" mnemonicParsing="false" onAction="#newRecord" text="Log-out" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="694.0">
+               <children>
+                  <MenuBar layoutY="-1.0" minWidth="-Infinity" prefHeight="25.0" prefWidth="696.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="Student">
+                        <items>
+                          <MenuItem fx:id="newRecord" mnemonicParsing="false" onAction="#newRecord" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Staff">
+                        <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                              <MenuItem mnemonicParsing="false" text="Delete" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Course">
+                        <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                        </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Module">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Assignment">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Attendance">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Tutor">
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Timetable">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Diary">
+                          <items>
+                              <MenuItem mnemonicParsing="false" text="New Record" />
+                              <MenuItem mnemonicParsing="false" text="Edit Record" />
+                              <MenuItem mnemonicParsing="false" text="Archive" />
+                              <MenuItem mnemonicParsing="false" text="Display" />
+                              <MenuItem mnemonicParsing="false" text="Assign" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Report Generation">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </Menu>
+                    </menus>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="2.0" />
+                     </padding>
+                  </MenuBar>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <TabPane fx:id="newStudentRecord" layoutY="125.0" prefHeight="366.0" prefWidth="696.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Personal Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtForename" layoutX="132.0" layoutY="38.0" />
+                        <TextField fx:id="txtSurname" layoutX="132.0" layoutY="78.0" />
+                        <TextField fx:id="txtTermAddress" layoutX="132.0" layoutY="117.0" />
+                        <Label layoutX="14.0" layoutY="38.0" prefHeight="25.0" prefWidth="65.0" text="Forename:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="78.0" prefHeight="25.0" prefWidth="65.0" text="Surname:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="307.0" layoutY="38.0" prefHeight="25.0" prefWidth="76.0" text="Date of Birth:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <DatePicker fx:id="calDob" layoutX="389.0" layoutY="38.0" prefHeight="25.0" prefWidth="110.0" />
+                        <Label layoutX="15.0" layoutY="117.0" prefHeight="25.0" prefWidth="115.0" text="Term time Address:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <TextField fx:id="txtPermAddress" layoutX="132.0" layoutY="156.0" />
+                        <Label layoutX="14.0" layoutY="156.0" prefHeight="25.0" prefWidth="117.0" text="Permanent Address:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <TextField fx:id="txtTelephone" layoutX="132.0" layoutY="197.0" />
+                        <Label layoutX="14.0" layoutY="197.0" prefHeight="25.0" prefWidth="117.0" text="Telephone:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <TextField fx:id="txtEmail" layoutX="132.0" layoutY="239.0" />
+                        <Label layoutX="14.0" layoutY="239.0" prefHeight="25.0" prefWidth="117.0" text="Email:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Button layoutX="467.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="95.0" text="Next -&gt;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.4047619047619048" startX="0.8523809523809524" startY="0.4">
+                                 <stops>
+                                    <Stop color="#948d8d" />
+                                    <Stop color="#948d8d" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="nextdetail" text="Qualifications">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="35.0" layoutY="73.0" prefHeight="25.0" prefWidth="118.0" text="Entry Qualifications:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="27.0" prefHeight="25.0" prefWidth="166.0" text="Previous Academic Institute:">
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.8714285714285714" startX="0.4095238095238095" startY="0.5238095238095238">
+                                 <stops>
+                                    <Stop color="#0ebf75" />
+                                    <Stop color="#80e0ed" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <TextField fx:id="txtAcademicInstitute" layoutX="191.0" layoutY="27.0" />
+                        <Button fx:id="addRecord" layoutX="465.0" layoutY="217.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="65.0" text="Add">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.4047619047619048" startX="0.8523809523809524" startY="0.4">
+                                 <stops>
+                                    <Stop color="#948d8d" />
+                                    <Stop color="#948d8d" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <Button layoutX="71.0" layoutY="217.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" text="&lt;- Previous">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="0.4095238095238095" endY="0.4047619047619048" startX="0.8523809523809524" startY="0.4">
+                                 <stops>
+                                    <Stop color="#948d8d" />
+                                    <Stop color="#948d8d" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Button>
+                        <TextArea fx:id="txtEntryRequirements" layoutX="153.0" layoutY="79.0" prefHeight="84.0" prefWidth="200.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
